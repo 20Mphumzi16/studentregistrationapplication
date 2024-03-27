@@ -6,6 +6,7 @@ import java.time.LocalDate;
    LecturerSubject model class
    Author: Cavan Ramone Swartz (221055835)
    Date: 22 March 2024
+   https://github.com/hollow007/mystudentregistrationapplication
  */
 public class LecturerSubject {
 
@@ -50,16 +51,20 @@ public class LecturerSubject {
     @Override
     public String toString() {
         return "LecturerSubject{" +
-                "lecturer=" + lecturer +
-                ", subject=" + subject +
-                ", assignmentDate=" + assignmentDate +
-                ", contractType='" + contractType + '\'' +
-                ", roomNumber='" + roomNumber + '\'' +
+                "\nlecturer=" + lecturer +
+                "\nsubject=" + subject +
+                "\nassignmentDate=" + assignmentDate +
+                "\ncontractType='" + contractType + '\'' +
+                "\nroomNumber='" + roomNumber + '\'' +
                 '}';
     }
 
     public LecturerSubject build() {
         return null;
+    }
+
+    public void setContractType(String contractType) {
+        this.contractType = contractType;
     }
 
     public static class LecturerSubjectBuilder{
